@@ -37,7 +37,9 @@ Coletada as informações de um dado município, podem ser feitas visualizaçõe
 
 <img src="images/exemplo_compare.png" height="390" align="center"/>
     
+
 Dependências:
+------------
 
 - pandas
 - seaborn
@@ -46,6 +48,9 @@ Dependências:
 - tensorflow
 - pickle
 - mplleaflet
+
+Parceria:
+---------
 
 <img alt="ObservatórioDoFuturo" src="https://www4.tce.sp.gov.br/observatorio/wp-content/uploads/sites/3/2018/01/logo_splash.png" height="60">
 
