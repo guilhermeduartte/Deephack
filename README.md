@@ -66,3 +66,6 @@ Parceria:
 <img alt="Cobli" src="https://pbs.twimg.com/profile_images/1025397324489601024/3qZF9Cfy_400x400.jpg" height="60">
 
 <img alt="WildLife" src="https://pbs.twimg.com/profile_images/1169750339517636612/TjTbeYya.jpg" height="60">
+
+<img alt="Nvidia" src="https://img.ibxk.com.br/2013/10/22/22190347613.jpg" height="60">
+
