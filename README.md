@@ -41,13 +41,18 @@ Coletada as informações de um dado município, podem ser feitas visualizaçõe
 Dependências:
 ------------
 
-- pandas
-- seaborn
-- matplotlib
-- numpy
-- tensorflow
+- pandas=0.25.0
+- seaborn=0.9.0
+- matplotlib=3.1.0
+- numpy=1.16.4
+- tensorflow=1.14.0
+- progressbar=3.37.1
 - pickle
 - mplleaflet
+- unicode
+- zipfile
+- urllib
+- os
 
 Parceria:
 ---------
