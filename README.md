@@ -10,7 +10,7 @@ Automatização da coleta de dados das despesas em 'Gestão Ambiental' para os m
 #### Automatização da coleta de dados
 Com um comando o usuário consegue coletar as informações das despesas de um município de interesse para um intervalo de anos; com isso todas as visualizações supracitadas estão disponíveis. Além disso, existe a opção de coletar as informações dos k-vizinhos do município com base nas latitudes e longitudes para análises locais. Não só isso, como também é possível automaticamente treinar uma rede recorrente (RNN simples) para predição do comportamento futuro do município em questão.
 ```
-    referencia = readMunicipio('Ilhabela', years = (2016, 2018), k_neighboors=3, trainRNN = True)
+    referencia = readMunicipio('São Bernardo do Camplo', years = (2016, 2018), k_neighboors=5, trainRNN = True)
 ```
 #### Visualização dos dados
 Coletada as informações de um dado município, podem ser feitas visualizações como:
@@ -19,7 +19,7 @@ Coletada as informações de um dado município, podem ser feitas visualizaçõe
 ```
     referencia.plotSerie()
 ```
-<div style="text-align:center"><img src="images/exemplo_serie.png" height="500" /></div>
+<div style="text-align:center"><img src="images/sao-bernardo-do-campo/sao-bernardo-do-campo_serie_rnn.png" height="500" /></div>
 
 - **Pizza de descrição:** Já nessa representação, a fins de interesse de explicabilidade sobre quais programas foram distribuidas as despesas anuais, podemos visualizar em um gráfico de pizza tal distribuição dada uma lista de anos.
 
@@ -27,7 +27,7 @@ Coletada as informações de um dado município, podem ser feitas visualizaçõe
     referencia.plotOverview([2018])
 ```
 
-<div style="text-align:center"><img src="images/exemplo_overview.png" height="390" /></div>
+<img src="images/sao-bernardo-do-campo/sao-bernardo-do-campo_overview_2018.png" height="390" />
 
 - **Comparação de despesas locais:** Nessa representação, visualizamos em destaque a despesa *per capita* total para o ano predito do município de referência, em comparação com o último gasto anual dos k-vizinhos da referência.
 
@@ -35,8 +35,21 @@ Coletada as informações de um dado município, podem ser feitas visualizaçõe
     referencia.plotNeighboorsCompare()
 ```
 
-<img src="images/exemplo_compare.png" height="390" align="center"/>
-    
+<img src="images/sao-bernardo-do-campo/sao-bernardo-do-campo_neighboors.png" height="390" align="center"/>
+
+#### Visualização no mapa dos municípios + indicações
+Com um único comando, para uma dada lista de municípios (opcional, caso nao passado, são lidos todos os municípios) fica dispinével uma base para ser interpretada no mapa mundi com a respectiva visualização dos indicadores de <a href='https://iegm.tce.sp.gov.br/help.html'>i-Amb</a> e o tamanho relativo á magnitude de diferença entre as despesas em Gestão Ambiental do município com relação aos seus vizinhos; para que assim sejam mantidas características espaciais comuns para comparação de despesas.
+
+*obs. Caso queira navegar pelo mapa a baixo, acesse o arquivo '_map.html' na pasta principal deste repositório
+
+``` 
+    # para o exemplo usamos os municípios listados em 'datasets/municipios_sample.csv'
+    plotMapMun(lista_nomes_municipios)
+    mplleaflet.display()
+```
+
+<img src="images/mapa_mundi_sample.png" height="610" align="center"/>
+
 
 Dependências:
 ------------
