@@ -38,7 +38,7 @@ Coletada as informações de um dado município, podem ser feitas visualizaçõe
 <img src="images/sao-bernardo-do-campo/sao-bernardo-do-campo_neighboors.png" height="490" align="center"/>
 
 #### Visualização no mapa dos municípios + indicações
-Com um único comando, para uma dada lista de municípios (opcional, caso nao passado, são lidos todos os municípios) fica dispinével uma base para ser interpretada no mapa mundi com a respectiva visualização dos indicadores de <a href='https://iegm.tce.sp.gov.br/help.html'>i-Amb</a> e o tamanho relativo á magnitude de diferença entre as despesas em Gestão Ambiental do município com relação aos seus vizinhos; para que assim sejam mantidas características espaciais comuns para comparação de despesas.
+Com um único comando, para uma dada lista de municípios (opcional, caso nao passado, são lidos todos os municípios) fica dispinével uma base para ser interpretada no mapa mundi com a respectiva visualização dos indicadores de <a href='https://iegm.tce.sp.gov.br/help.html'>i-Amb</a> e o tamanho relativo á magnitude de diferença entre as despesas em Gestão Ambiental anuais previstas do município referência com relação ao último ano dos seus vizinhos. A escolha da comparação com os vizinhos foi pensada para manutenção de características geográficas comuns entre os municípios comparados.
 
 *obs. Caso queira navegar pelo mapa a baixo, acesse o arquivo '_map.html' na pasta principal deste repositório*
 
