@@ -8,7 +8,7 @@
 Automatização da coleta de dados das despesas em 'Gestão Ambiental' para os municípios cobertos pelo Tribunal de Contas do Estado de São Paulo (TCE-SP). *Insights* em análises de dados com visualizações gráficas em séries temporaris, tabelas, pizzas e mapas.
 
 #### Automatização da coleta de dados
-Com um comando o usuário consegue coletar as informações das despesas de um município de interesse para um intervalo de anos; com isso todas as visualizações supracitadas estão disponíveis. Além disso, existe a opção de coletar as informações dos k-vizinhos do município com base nas latitudes e longitudes para análises locais. Não só isso, como também é possível automaticamente treinar uma rede recorrente (RNN simples) para predição do comportamento futuro do município em questão.
+Com um comando o usuário consegue coletar as informações das despesas em 'Gestao Ambiental' de um município de interesse para um intervalo de anos; com isso todas as visualizações supracitadas estão disponíveis. Além disso, existe a opção de coletar as informações dos k-vizinhos do município com base nas latitudes e longitudes para análises locais. Não só isso, como também é possível automaticamente treinar uma rede recorrente (RNN simples) para predição do comportamento futuro do município em questão.
 ```
     referencia = readMunicipio('São Bernardo do Camplo', years = (2016, 2018), k_neighboors=5, trainRNN = True)
 ```
