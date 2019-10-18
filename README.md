@@ -44,7 +44,7 @@ Com um único comando, para uma dada lista de municípios (opcional, caso nao pa
 
 ``` 
     # para o exemplo usamos os municípios listados em 'datasets/municipios_sample.csv'
-    plotMapMun(lista_nomes_municipios)
+    plotMapMun(names_municipios = lista_nomes_municipios)
     mplleaflet.display()
 ```
 
